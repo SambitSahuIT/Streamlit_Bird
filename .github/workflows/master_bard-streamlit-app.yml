@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'Bard-Streamlit-App'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_16B1AE75781041D2AC908E792750D13F }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_15076141B2F64B0DA07F7C17297B77D5 }}
