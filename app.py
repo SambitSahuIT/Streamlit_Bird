@@ -1,6 +1,7 @@
 from bardapi import Bard 
 import streamlit as st
 from streamlit_chat import message
+from waitress import serve
 
 import os
 os.environ['_BARD_API_KEY']="YAhi70m7MPPMduUaCkgkJaN_wt4qrPWFi7iVZhWCqt7JMWSsuUly43Q296UtRM8cQcMskQ."
@@ -34,4 +35,4 @@ def main():
         st.success(tweet)
 
 if __name__ == "__main__":
-    main()
+    serve(app, host='0.0.0.0', port=8000, threads=1, channel_timeout=300)
